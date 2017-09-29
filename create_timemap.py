@@ -8,9 +8,9 @@ import json
 import csv
 
 parser = argparse.ArgumentParser(description='Create a CSV of mementos and archive datetimes')
-parser.add_argument('-u', '--uri', dest='uri',
+parser.add_argument('uri',
                    help='single URI-R to process')
-parser.add_argument('-o', '--outfile', dest='outfile',
+parser.add_argument('outfile',
                    help='file in which results are written')
 
 args = parser.parse_args()
